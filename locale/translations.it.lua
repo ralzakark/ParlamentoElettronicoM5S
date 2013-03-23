@@ -783,5 +783,4 @@ return {
 ["Create new committee"] = "Crea nuova commissione";
 ["Search for committees"] = "Cerca commissioni";
 ["Committee: '#{name}'"] = "Commissione: '#{name}'"; 
-["Create new committee"] = "Crea nuova commissione";
 }
