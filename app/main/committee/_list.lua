@@ -2,7 +2,7 @@ local committees_selector = param.get("committees_selector", "table")
 
 local paginator_name = param.get("paginator_name")
 
-ui.add_partial_param_names{ "committee_list" }
+--ui.add_partial_param_names{ "committee_list" }
 
 local filter = { name = "committee_list" }
 
@@ -29,26 +29,20 @@ ui_filters{
       anchor = paginator_name,
       selector = committees_selector,
       per_page = 50,
-      content = function() 
-        ui.container{
-          attr = { class = "committee_list" },
-          content = function()
-            local committees = committees_selector:exec()
-
-            for i, committee in ipairs(committees) do
-              execute.view{
-                module = "committee",
-                view = "_show_thumb",
-                params = {
-                  committee = committee,
-                }
-              }
-            end
-
-
-          end
+      content = function()
+        ui.list{
+          records = committees_selector:exec(),
+          columns = {
+            {
+              label = _"Name",
+              name = "name"
+            },
+            {
+              label = _"Description",
+              name = "description"
+            }
+          }
         }
-        slot.put('<br style="clear: left;" />')
       end
     }
   end

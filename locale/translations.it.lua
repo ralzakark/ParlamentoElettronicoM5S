@@ -781,7 +781,7 @@ return {
 ["Committees"] = "Commissioni";
 ["Committe list"] = "Lista commissioni";
 ["Create new committee"] = "Crea nuova commissione";
-["Search for committees"] = "Cerca commissioni";
+["Search for committees"] = "Ricerca commissioni";
 ["Committee: '#{name}'"] = "Commissione: '#{name}'"; 
 ["Error while updating committee, database reported:<br /><br /> (#{errormessage})"] = "Errore aggiornamento commissione, messaggio databaser:<br /><br /> (#{errormessage})";
 ["Committee successfully updated"] = "Commissione aggiornata correttamente";

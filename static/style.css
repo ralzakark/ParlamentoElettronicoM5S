@@ -547,6 +547,11 @@ a.delegation_info:focus {
   border-radius: 8px;
 }
 
+.committee_list {
+  float: left;
+  margin-right: 0.5em;
+}
+
 /*************************************************************************
  * Main content
  */
