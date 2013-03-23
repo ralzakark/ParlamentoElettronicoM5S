@@ -779,7 +779,7 @@ return {
 ["years [interval time left]"] = "anni";
 ["years [interval]"] = "anni";
 ["Committees"] = "Commissioni";
-["Committe list"] = "Lista Commissioni";
+["Committe list"] = "Lista commissioni";
 ["Create new committee"] = "Crea nuova commissione";
 ["Search for committees"] = "Cerca commissioni";
 ["Committee: '#{name}'"] = "Commissione: '#{name}'"; 

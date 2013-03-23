@@ -23,7 +23,8 @@ ui.form{
         foreign_records = {
           { id = "global", name = _"Global search" },
           { id = "member", name = _"Search for members" },
-          { id = "issue", name = _"Search for issues" }
+          { id = "issue", name = _"Search for issues" },
+          { id = "committee", name = _"Search for committees" }
         },
         foreign_id = "id",
         foreign_name = "name",
@@ -45,6 +46,17 @@ if search_string then
         module = "member",
         view = "_list",
         params = { members_selector = members_selector },
+      }
+    end
+  end
+
+  if app.session:has_access("everything") then
+    if search_for == "global" or search_for == "committee" then
+      local committees_selector = Committee:get_search_selector(search_string)
+      execute.view{
+        module = "committee",
+        view = "_list",
+        params = { committees_selector = committees_selector },
       }
     end
   end
