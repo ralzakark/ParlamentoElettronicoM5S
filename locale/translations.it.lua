@@ -778,4 +778,10 @@ return {
 ["years [interval ago]"] = "anni";
 ["years [interval time left]"] = "anni";
 ["years [interval]"] = "anni";
+["Committees"] = "Commissioni";
+["Committe list"] = "Lista Commissioni";
+["Create new committee"] = "Crea nuova commissione";
+["Search for committees"] = "Cerca commissioni";
+["Committee: '#{name}'"] = "Commissione: '#{name}'"; 
+["Create new committee"] = "Crea nuova commissione";
 }
