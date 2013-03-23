@@ -18,6 +18,13 @@ ui.tag{ tag = "ul", content = function()
   end }
   ui.tag{ tag= "li", content = function()
     ui.link{
+      text = _"Commitees",
+      module = "admin",
+      view = "committee_list",
+    }
+  end }
+  ui.tag{ tag= "li", content = function()
+    ui.link{
       text = _"Members",
       module = "admin",
       view = "member_list",
